@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".signupActivity">
+
+    <LinearLayout
+        android:id="@+id/adlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:id="@+id/text1"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="Ad Soyad:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="John"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="85dp"
+            android:padding="15dp"
+            android:id="@+id/fotoekle"
+            android:src="@drawable/user2"
+            android:layout_marginTop="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soyadlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adlay">
+
+        <TextView
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:id="@+id/text2"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="Soyad:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextName2"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Smith"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soyadlay">
+
+
+        <TextView
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:id="@+id/text4"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="Telefon No:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextTel"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="05554443322"
+            android:inputType="phone"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maillay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tellay">
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="E-mail:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextMail"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="johnsmith@gmail.com"
+            android:inputType="textEmailAddress"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dglay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maillay">
+
+
+        <TextView
+            android:id="@+id/text5"
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="Doğum Günü:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextDg"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Dokunarak tarihi seçin"
+            android:ems="10"
+            android:inputType="datetime"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dglay">
+
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:text="Parola:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextParola"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passlay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passlay">
+
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:text="Yeniden Parola:"
+            android:textColor="@color/mor"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/editTextParola2"
+            android:layout_width="232dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kayit_butonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="10dp"
+        android:background="@color/mor"
+        android:textColor="@color/gray"
+        android:text="      Kayıt Ol    "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passlay2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
